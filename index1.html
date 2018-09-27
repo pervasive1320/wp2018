@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+
+
+<title>Page Title</title>
+<style>
+
+*{margin:0;padding:0};
+img{border:none}
+
+
+
+#DPPKMT {position:fixed;
+    margin-top:20%;
+    color:rgba(255,255,255,1);
+    font-family:Calibri ;
+    font-size:0.3em;
+    margin-left: 20%;
+    width:30em;
+    letter-spacing: 0.08em ;
+    word-spacing:0.2em;
+    z-index:10;
+}
+body 
+{border:0;
+ margin:0;
+padding:0;
+}
+h1{position:fixed;
+    margin-top:10%;
+    font-size:0.8em;
+    word-spacing:0.6em;
+    margin-left: 20%;
+    width:16em;
+    color:rgba(255,255,255,1);
+    font-family:Calibri ;
+    letter-spacing: 0.15em ;
+}
+#botton
+{
+    
+    position:absolute;
+    margin-left: 20%;
+    border: 0.01em solid white ;
+    margin-top: 35%; 
+
+   padding:1.5em;
+    
+    color:rgba(255,255,255,1);
+    display:block;
+    width:6em;
+    text-decoration:none;
+    font-size:0.7em;
+    text-align: center;
+    font-family:Calibri ;
+    letter-spacing: 0.1em ;
+    
+    display:block;}
+
+#overview{
+   position:fixed;
+    margin-top:12%;
+    font-size:3em;
+    color:rgba(255,255,255,1);
+    margin-left: 20%;
+    width:3em;
+    letter-spacing: 0.08em ;
+    
+}
+
+.box{
+	margin:0;
+	padding:0;
+border:0;
+}
+
+
+.box {
+	position:relative;
+	background:rgba(255,255,255,0);
+	overflow:hidden;
+        width:100%;
+    height:100%;
+}
+.content {
+	width:100%;
+    height:100%;
+	position:absolute;
+        margin:0;
+	top:0;
+        
+}
+
+#firstpage
+{background-image:url("https://cdn-az.allevents.in/banners/32bc9d639300368fe96d1492acc5e6e3-rimg-w1600-h1580-gmir.jpg");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+background-size: cover;
+margin:0;
+border:0;
+padding:0;
+
+
+}
+#secondpage
+{background-image:url("https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/42642887_2632605340090323_2605216231338278912_o.jpg?_nc_cat=106&_nc_eui2=AeEdKhifGrIE21j8FfkBAxfmgKW2iCSKLJrJxoUmCGiHMPT7CGWUV18S4qpackrfqTEzsoF-Yzg6PcMGMQW4eKGmNcTq4ixk64KmBzBglIrxHQ&oh=e11fc7ea6b402bccdd242854ea76ca2c&oe=5C5CEC07");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+background-size: cover;
+margin:0;
+top:0;
+border:0;
+padding:0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+li.navi1{
+    float: right;
+}
+
+ul.wrap {
+  display: table;
+  margin: 0 ;
+  list-style-type: none;
+  position:fixed;
+  top:0em;
+    right:30%;
+  z-index:2;
+
+}
+
+li a.navi {
+    display: inline-block;
+    color:rgba(255,255,255,1);
+    text-align: right;
+    padding: 14px 15px;
+    text-decoration: none;
+    font-family:Calibri ;
+    letter-spacing: 0.3em ;
+}
+li a.navi:hover:not(.active) {
+    background-color: rgba(255,255,255,0.5);
+}
+
+
+
+#ig1 {position: fixed;
+    top:0.25em;
+    right:0.17em;
+    width: 0.037em;
+    height:0.15em;
+    font-size: 0.05em;
+    color:rgba(255,255,255,1);
+    display:block;
+    z-index:5;}
+#tw1 {position: fixed;
+    top:0.25em;
+    right:2.7em;
+    width: 0.1em;
+    height:0.1em;
+    font-size: 0.52em;
+    color:rgba(255,255,255,1);
+    display:block;
+    z-index:5;}
+#fb1 {position: fixed;
+    top:0.25em;
+    right:5.3em;
+    width: 0.1em;
+    height:0.1em;
+    font-size: 0.05em;
+    color:rgba(255,255,255,1);
+    display:block;
+    z-index:5;
+    }
+#ig {position: fixed;
+    top:0.2em;
+    right:1em;
+    width: 0.033em;
+    height:0.033em;
+    font-size: 1em;
+    color:rgba(255,255,255,1);
+    display:block;
+     z-index:3;
+    }
+#tw {position: fixed;
+    top:0.2em;
+    right:2.3em;
+    width: 0.1em;
+    height:0.1em;
+    font-size: 1em;
+    color:rgba(255,255,255,1);
+    display:block;
+    z-index:3;
+    }
+#fb {position: fixed;
+    top:0.3em;
+    right:3.75em;
+    width: 0.1em;
+    height:0.1em;
+    font-size: 0.9em;
+    color:rgba(255,255,255,1);
+    display:block;
+    z-index:3;
+    }
+
+
+#Taiwan
+{position:absolute;
+    top:40%;
+    right:56%;
+    width: 0.1em;
+    height:6em;
+    font-size: 3.9em;
+    color:rgba(255,255,255,1);
+    display:block;
+    z-index:0;
+    -webkit-text-stroke: 5px black;
+    font-family:Calibri;
+    
+    }
+#x1
+{   position:fixed;
+    background-color:rgba(19,23,70,42);
+    right:22%;
+    width:230px;
+    height:550px;
+    transform: rotate(45deg);
+    z-index:0;
+    border-radius: 65px 0px 0px 0px;
+    }
+#x2
+{   position:fixed;
+    background-color:rgba(19,23,70,42);
+    right:18%;
+    width:230px;
+    height:850px;
+    transform:rotate(45deg);
+    z-index:0;
+    }
+#x3
+{   position:fixed;
+    background-color:rgba(19,23,70,42);
+    right:3%;
+    width:350px;
+    height:960px;
+    transform:rotate(45deg);
+    z-index:0;
+    }
+#x4
+{   position:fixed;
+    background-color:rgba(19,23,70,42);
+    right:0%;
+    width:800px;
+    height:h;
+    z-index:0;
+}
+
+
+</style>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="box">
+        
+   
+  <ul class="content">
+  
+ 
+    <div id="firstpage">
+          <ul class="wrap">
+  <li class="navi1"><a class="navi" href="#home">SURFERS</a></li>
+  <li class="navi1"><a class="navi" href="#news">EVENTS</a></li>
+  <li class="navi1"><a class="navi" href="#contact">LOCATIONS</a></li>
+  <li class="navi1"><a class="navi" id="ig1" href="https://www.instagram.com/pervasive_bystander/?hl=zh-tw"></a></li>
+  <li class="navi1"><a class="navi" id="tw1" href="https://www.instagram.com/pervasive_bystander/?hl=zh-tw"></a></li>
+  <li class="navi1"><a class="navi" id="fb1" href="https://www.facebook.com/profile.php?id=100000226486242"></a></li>
+  <i class="fa fa-twitter" id="tw"></i>
+  <i class="fa fa-instagram	" id="ig" ></i>
+  <i class="fa fa-facebook	" id="fb" ></i>
+   </ul>
+      
+       <div id="Taiwan">
+       Taiwan
+       </div>
+        
+        </div>
+        
+
+
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div id="secondpage">
+       <p id="x1"></p>
+       <p id="x2"></p>
+       <p id="x3"></p>
+       <p id="x4"></p> 
+                <div>
+       <h1>THE LOW DOWN</h1>
+       <h2 id="overview">Overview</h2>
+       <div><p id="DPPKMT">Taiwan,which is my hometown , where people are very hospitable , is a island on west Pacific. 
+People there speak chinese taiwanese or japanese,because we had been colonized by Japan before the end of world war 2. 
+Taiwan is famous of delicious local food , like Stinky tofu , fried chicken , etc. 
+However , this beautiful island is being destroyed by DPP and KMT,which is characterized by green and blue.
+Selection is important in democratic country,but our selection become a mere formality.
+The candidates only care about how many votes they get,instead of the welfare of citizens.
+I extremely worry about the future of my home,so I call all the  electors to vote for the candidates who care about us.
+
+</p>
+<p><a id="botton" href="#moreinfo">MORE INFO</a></p>
+
+</div>
+
+
+       
+       
+       
+       </div>
+       
+       
+       
+       
+       
+        
+        
+        
+        
+        
+        
+        
+        </div>   
+    </ul>  
+</div> 
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+
+<script>
+
+
+//	获取窗口的高度,并且赋值给滚动的盒子
+var h = $(window).height() ;
+var len = $(".content div").length
+$(".box,.content div,#x4").css({
+    height: h
+});
+//		   监听窗口大小的改变,再重新获取窗口的高度
+
+function add(a, evt, fn) {
+    if (a.addEventListener) {
+        a.addEventListener(evt, fn)
+
+    } else {
+        a.attachEvent("on" + evt, fn)
+    }
+}
+add(window, "mousewheel", gun);
+add(window, "DOMMouseScroll", gun);
+
+function gun(evt) {
+    var e = evt || window.event;
+    if (e.detail) {
+        if (e.detail < 0) {
+            myUp()
+        } else if (e.detail > 0) {
+            myDown()
+
+        }
+    } else if (e.wheelDelta) {
+        if (e.wheelDelta > 0) {
+            myUp()
+        } else if (e.wheelDelta < 0) {
+            myDown()
+
+        };
+    };
+};
+
+//		 节流阀
+
+var fa = true;
+var index = 0;
+var jj = 0;
+var timer = null;
+
+function myUp() {
+    if (jj < 1) {
+        clearTimeout(timer);
+        timer = setTimeout(function() {
+            jj++
+        }, 200);
+    } else if (fa) {
+        fa = !fa;
+        index--;
+        if (index < 0) {
+            index = 0;
+        }
+        anim();
+        console.log(index);
+    }
+}
+
+function myDown() {
+    if (jj < 1) {
+        clearTimeout(timer);
+        timer = setInterval(function() {
+            jj++;
+        }, 200);
+    } else if (fa) {
+        fa = !fa;
+        index++;
+        if (index >1) {
+            index =1;
+            console.log(index);
+
+        }
+        anim()
+        console.log(index);
+    }
+}
+
+function anim() {
+    $(".content").animate({
+        top: -index * h
+    }, 400, function() {
+        fa = !fa;
+        jj = 0
+
+    })
+}
+
+
+
+
+
+</script>
+<script> 
+
+$(document).ready(function unveil(){
+   $("#DPPKMT").mouseenter(function unveil(){
+     $("#x1").delay(50).animate({left: '3500px',top:'-2500px',opacity: '0'},1000);
+    });
+});
+ 
+
+$(document).ready(function unveil(){
+    $("#DPPKMT").mouseenter(function unveil(){
+        $("#x2").delay(400).animate({left: '-2200px',top:'2800px',opacity: '0'},1000);
+    });
+});
+$(document).ready(function unveil(){
+ $("#DPPKMT").mouseenter(function unveil(){
+ $("#x3").delay(800).animate({left: '4500px',top:'-2500px',opacity: '0'},1000);
+    });
+});
+$(document).ready(function unveil(){
+    $("#secondpage").mouseenter(function unveil(){
+        $("#x4").delay(50).animate({opacity: '0'},2);
+    });
+});
+$(document).ready(function unveil(){
+    $("#firstpage").mouseenter(function unveil(){
+        $("#x4").delay(50).animate({opacity: '1'},2);
+    });
+});
+
+
+</script>
+
+
+</body>
+</html>
+
+
